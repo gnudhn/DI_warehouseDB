@@ -16,7 +16,7 @@ CREATE PROCEDURE [dbo].[ELMAH_LogError]
     @TimeUtc DATETIME
 )
 AS
-
+-- test
     SET NOCOUNT ON
 
     INSERT

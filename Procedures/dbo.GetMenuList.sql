@@ -6,7 +6,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE dbo.GetMenuList
+CREATE PROCEDURE [dbo].[GetMenuList]
 		@Company_ID uniqueidentifier
 		,@Role_ID nvarchar(128)
 AS
@@ -16,5 +16,7 @@ BEGIN
 		Inner JOIN admin.MenuRole r ON m.ID = r.Menu_ID
 	Where r.Company_ID = @Company_ID
 		And r.Role_ID = @Role_ID
+
+		--Dung test test
 END
 GO
